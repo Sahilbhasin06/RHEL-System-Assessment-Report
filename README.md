@@ -79,6 +79,7 @@ rhcheck/
 └── tests/
     ├── __init__.py       # Marks the test folder path boundary
     └── test_checkers.py  # Comprehensive pytest unit-test suite using system mocks
+```
 
 ## Installation & Setup
 Because rhcheck is packaged using modern pyproject.toml standards, you can easily deploy it into development environments.
@@ -99,6 +100,7 @@ python3 src/main.py report
 
 # Access the dynamic CLI documentation and flags
 python3 src/main.py --help
+```
 
 ## Test-Driven Validation Matrix
 The project code is structurally decoupled from active kernel metrics using mock objects. This allows the testing matrix to simulate diverse RHEL infrastructures (such as SCA entitlement configurations) on non-Linux machines (Mac, Windows) cleanly.
