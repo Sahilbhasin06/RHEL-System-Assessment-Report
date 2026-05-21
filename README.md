@@ -44,7 +44,7 @@ The `rhcheck` tool operates as a localized user-space diagnostic broker. It acts
                     │                               │
     ┌───────────────┼──────────────┐  ┌─────────────┼──────────────┐
     ▼               ▼              ▼  ▼             ▼              ▼
- [/proc]      [/etc/shadow]     [Disk] [sestatus]  [dnf]   [subscription-manager]
+    [/proc]      [/etc/shadow]     [Disk] [sestatus]  [dnf]   [subscription-manager]
 
 
 1. **Presentation Layer (`src/main.py`)**: Built using `Typer`, it parses user commands and orchestrates execution flow. It captures outputs from the logic engine and passes them to `Rich`, which builds the final color-coded UI grid.
